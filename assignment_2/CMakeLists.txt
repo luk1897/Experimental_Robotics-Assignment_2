@@ -17,6 +17,7 @@ find_package(catkin REQUIRED COMPONENTS
   rospy
   std_msgs
   rosplan_planning_system
+  move_base_msgs
 )
 
 ## System dependencies are found with CMake's conventions
@@ -56,6 +57,7 @@ find_package(catkin REQUIRED COMPONENTS
 add_message_files(
   FILES
   RobotVision.msg
+  LogicStates.msg
  )
 
 ## Generate services in the 'srv' folder

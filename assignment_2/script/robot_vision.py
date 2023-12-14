@@ -25,7 +25,7 @@ from cv_bridge import CvBridge
 import cv2
 from cv2 import aruco
 from sensor_msgs.msg import Image, CameraInfo
-from assignment_1.msg import RobotVision
+from assignment_2.msg import RobotVision
 
 cam_center_x = 0
 cam_center_y = 0
@@ -98,7 +98,7 @@ def img_cb(img_msg):
         
         info_msg = RobotVision()
         
-        # sending all the informations to info_vision
+        # sending all the information to info_vision
         
         info_msg.id = int(ids[0][0])
         info_msg.camera_center = camera_center
